@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mysilider"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_weight="1">
+
+           <LinearLayout
+                android:gravity="top"
+                android:background="#FFDFDFDF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="225dp">
+
+                <com.bs.service.MyImageView
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:src="@drawable/header_1"
+                    android:id="@+id/cityImage5"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView
+                android:lines="2"
+                android:id="@+id/cityjj"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:text="阿萨德飞机拉斯佛罗伦萨胜利大街发牢骚的减肥了圣诞节福利三等奖流水就多发了圣诞节福利时代峻峰四六级发电量速度快解放路开始的发了圣诞节福利时代峻峰临时的福建省地方就死定了开发"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:gravity=""
+                android:layout_height="60dp" />
+
+            <TextView
+                android:text="成都"
+                android:gravity=""
+                android:lines="1"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/cityName" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="315dp"
+            android:alpha="0"
+            android:focusable="false"
+            android:onClick="OnClickCityButton"
+            android:id="@+id/city_face_button" />
+
+    </FrameLayout>
+
+</LinearLayout>
